@@ -1,0 +1,92 @@
+Grok Vim's Registers
+"{register}
+
+"ayiw        : yank the current word into register a
+"bdd         : cut the current line into register b
+"ap          : paste the word from register a
+"bp          : paste the word from register b
+
+These will be useful in Tip 100
+:delete c    : cut the current line into register c
+:put    c    : paste it below the current line from register c
+
+# 1. Unnamed Register ("")
+""p          : paste the content from register "
+p            : paste the content from register "
+x, s, d, c, y (and their uppercase equivalents) all set the contents of the
+unnamed register.
+
+# The Yank Register ("0)
+Didn't know it! y copies the text not only into the unnnamed register(""), but
+also into the yank register("0).
+
+collection = getCollection();
+^
+process(somethingInTheWay, target);
+
+>yiw
+>jww
+>diw
+>"0P
+collection = getCollection();
+process(collection, target);
+
+:reg {registers}   : Inspect the contents of the specified registers.
+:reg "0abc         : Inspect ", 0, a, b and c registers.
+
+# The Named Registers ("a - "z)
+collection = getCollection();
+^
+process(somethingInTheWay, target);
+
+>"ayiw
+>jww
+>diw
+>"aP
+collection = getCollection();
+process(collection, target);
+
+# The Black Hole Register ("_)
+"_d{motion}   : deleted text will go into blackhole
+
+
+collection = getCollection();
+^
+process(collection, target);
+
+>yiw
+>jww
+>"_diw
+>P
+collection = getCollection();
+process(collection, target);
+
+
+# The System Clipboard ("+) and Selection ("*) Registers
+"+    : The X11 clipboard, used with cut, copy, and paste
+"*    : The X11 primary, used with middle mouse button (not in Mac OSX and Windows)
+
+# The Expression Register ("=)
+6 chairs, each costing $35, totals $
+^
+
+>A
+><C-r>=6*35<CR>
+
+6 chairs, each costing $35, totals $210
+
+>"=1<<31<CR>p
+>o<ESC>
+>"=1<<32<CR>p
+>o<ESC>
+>"=1<<63<CR>p
+>o<ESC>
+>"=1<<64<CR>p
+
+2147483648
+4294967296
+-9223372036854775808
+0
+tip61.txt
+
+hogehoge
