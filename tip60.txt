@@ -1,0 +1,38 @@
+# 1. Transposing Characters
+Practica lvim
+            ^
+>F xp
+Practical vim
+
+# 2. Transposing Lines
+2) line two
+^
+1) line one
+3) line three
+
+>ddp
+1) line one
+2) line two
+3) line three
+
+# 3. Duplicating Lines
+1) line one
+2) line two
+^
+
+>>yyp
+1) line one
+2) line two
+2) line two
+
+# 4. Oops! I Clobbered My Yank
+collection = getCollection();
+^
+process(somethingInTheWay, target);
+
+>yiw
+>jww
+>diw
+>P
+collection = getCollection();
+process(somethingInTheWay, target);
