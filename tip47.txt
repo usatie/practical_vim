@@ -1,0 +1,6 @@
+# Keep Your Fingers on the Home Row
+
+h    : One column left
+l    : One column right
+j    : One line down
+k    : One line up
