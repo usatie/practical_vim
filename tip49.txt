@@ -1,0 +1,36 @@
+# Move Word-Wise
+
+w   : Forward to start of next word
+b   : Backward to start of current/previous word
+e   : Forward to end of current/next word
+ge  : Backward to end of current/next word
+
+Go fast.
+   ^
+
+>eaer<Esc>
+Go faster.
+
+## Know Your Words from Your WORDS
+e.g. we're going too slow
+^
+
+>wwww
+>www
+
+e.g. we're going too slow
+^
+
+>W
+>W
+
+e.g. we're going too slow
+     ^
+
+>cwyou<Esc>
+
+e.g. you're going too slow
+
+>cWit's<Esc>
+
+e.g. it's going too slow
