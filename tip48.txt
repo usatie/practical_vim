@@ -1,0 +1,15 @@
+# Distinguish Between Real Lines and Display Lines
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Ultricies tristique nulla aliquet enim tortor at. Tristique senectus et netus et malesuada fames ac turpis. Fermentum dui faucibus in ornare quam viverra orci sagittis. Tincidunt eget nullam non nisi est sit. Ac ut consequat semper viverra nam libero justo. Arcu dictum varius duis at consectetur lorem donec. Duis at tellus at urna condimentum. Ut morbi tincidunt augue interdum velit euismod in pellentesque massa. Massa tincidunt dui ut ornare lectus.
+A lacus vestibulum sed arcu non odio euismod. Auctor eu augue ut lectus. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Lacus luctus accumsan tortor posuere ac ut consequat. Integer feugiat scelerisque varius morbi enim. Pulvinar mattis nunc sed blandit libero volutpat. Eleifend mi in nulla posuere. Lacus sed viverra tellus in hac habitasse platea. Et netus et malesuada fames ac. Ante metus dictum at tempor commodo ullamcorper a lacus. Diam ut venenatis tellus in metus vulputate.
+Ante metus dictum at tempor. Vel fringilla est ullamcorper eget. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Sagittis purus sit amet volutpat. Massa eget egestas purus viverra accumsan. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Lorem sed risus ultricies tristique nulla aliquet. Pellentesque nec nam aliquam sem. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Donec enim diam vulputate ut pharetra. Cras ornare arcu dui vivamus. Dignissim convallis aenean et tortor at risus viverra. Ac ut consequat semper viverra nam. Arcu cursus vitae congue mauris rhoncus aenean. Proin sed libero enim sed faucibus turpis in eu mi.
+
+j   : Down one real line
+gj  : Down one display line
+k   : Up one real line
+gk  : Up one display line
+0   : To first character of real line
+g0  : To first character of display line
+^   : To first nonblank character of real line
+g^  : To first nonblank character of display line
+$   : To end of real line
+g$  : To end of display line
