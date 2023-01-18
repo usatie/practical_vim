@@ -1,0 +1,32 @@
+# Replace a Visual Selection with a Register
+
+collection = getCollection();
+^
+process(somethingInTheWay, target);
+
+>yiw
+>jww
+>ve
+>p
+
+collection = getCollection();
+process(collection, target);
+
+## Swap Two Words
+
+I like chips and fish.
+^
+
+>fc
+>de
+>mm
+>ww
+>ve
+>p
+>`m
+>P
+
+I like fish and chips.
+
+m{char}   : sets a mark
+`{char}   : jumps to the mark
