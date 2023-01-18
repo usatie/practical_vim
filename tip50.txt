@@ -1,0 +1,57 @@
+# Find by Character
+
+Find the first occurrence of {char} and move to it.
+^
+
+>fx
+>fo
+
+Find the first occurrence of {char} and move to it.
+^
+
+>fc
+>;
+>;
+>;
+
+Find the first occurrence of {char} and move to it.
+^
+
+>fo
+>;;
+>,
+
+
+## Character Searches Can Include or Exclude the Target
+f{char}  : Forward to the next occurrence of {char}
+F{char}  : Backward to the previous occurrence of {char}
+t{char}  : Forward to the character before the next occurrence of {char}
+T{char}  : Backward to the character after the previous occurrence of {char}
+;        : Repeat the last character-search command
+,        : Reverse the last character-search command
+
+
+I've been expecting you, Mister Bond.
+^
+
+>f,
+>dfd
+I've been expecting you.
+
+>f,
+>dt.
+I've been expecting you, Mister Bond.
+
+
+## Think Like a Scrabble Player
+Improve your writing by deleting excellent adjectives.
+^
+
+>fe
+>;;;
+>dw
+Improve your writing by deleting adjectives.
+
+>fx
+>daw
+Improve your writing by deleting adjectives.
