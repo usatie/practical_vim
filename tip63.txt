@@ -1,0 +1,39 @@
+# Paste from a Register
+
+collection = getCollection();
+process(somehtingInTheWay, target);
+
+>puP
+>Pup
+muscle memory
+
+
+collection = getCollection();
+^
+process(somehtingInTheWay, target);
+
+>yiw
+>jww
+>ciw<C-r>0<Esc>
+
+collection = getCollection();
+process(collection, target);
+
+## Pasting Line-Wise Regions
+<table>
+  <tr>
+  ^
+    <td>Symbol</td>
+    <td>Name</td>
+  </tr>
+</table>
+
+>yap
+>gP
+
+<table>
+  <tr>
+    <td>Symbol</td>
+    <td>Name</td>
+  </tr>
+</table>
