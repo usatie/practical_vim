@@ -1,0 +1,33 @@
+# Search to Navigate
+search for your target
+^
+it only takes a moment
+to get where you want
+
+>/ta<CR>
+>/tak<CR>
+
+
+n   : jump to the next occurrence by repeating the pregious search
+N   : back up again
+
+## Operate with a Search Motion
+This phrase takes time but
+            ^
+eventually gets to the point.
+
+>v
+>/ge<CR>
+/h
+>d
+This phrase gets to the point.
+
+
+This phrase takes time but
+            ^
+eventually gets to the point.
+
+>d/ge<CR>
+This phrase gets to the point.
+
+### search command is an exclusive motion
