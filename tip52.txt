@@ -1,0 +1,43 @@
+# Trace Your Selection with Precision Text Objects
+## motions/template.js
+var tpl = [
+	'<a href="{url}">{title}</a>'
+	            ^
+]
+
+>vi}
+>a"
+>i>
+>it
+>at
+>a]
+var tpl = [
+	'<a href="{url}">{title}</a>'
+]
+
+a) or ab   : A pair of (parentheses)
+a} or aB   : A pair of {braces}
+a]         : A pair of [brackets]
+a>         : A pair of <angle brackets>
+a'         : A pair of 'single quotes'
+a"         : A pair of "double quotes"
+a`         : A pair of `backticks`
+at         : A pair of <xml>tags</xml>
+
+i) or ib   : Inside of (parentheses)
+i} or iB   : Inside of {braces}
+i]         : Inside of [brackets]
+i>         : Inside of <angle brackets>
+i'         : Inside of 'single quotes'
+i"         : Inside of "double quotes"
+i`         : Inside of `backticks`
+it         : Inside of <xml>tags</xml>
+
+## Performing Operations with Text Objects
+'<a href="{url}">{title}</a>'
+            ^
+
+>ci"#<Esc>
+>citclick here<Esc>
+
+'<a href="#">click here</a>'
