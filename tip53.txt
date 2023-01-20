@@ -1,0 +1,24 @@
+# Delete Around, or Change Inside
+
+iw    : word
+iW    : WORD
+is    : sentence
+ip    : paragraph
+aw    : word plus space(s)
+aW    : WORD plus space(s)
+as    : sentence plus space(s)
+ap    : paragraph plus blank line(s)
+
+Improve your writing by deleting excellent adjectives.
+                                  ^
+
+>daw
+Improve your writing by deleting adjectives.
+
+>ciwmost<Esc>
+Improve your writing by deleting most adjectives.
+                                  ^
+
+## General Tips
+aw, aW, as, ap with d{motion}
+iw, iW, is, ip with c{motion}
