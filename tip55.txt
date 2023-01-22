@@ -1,0 +1,43 @@
+# Jump Between Matching Parentheses
+console.log([{'a':1},{'b':2}])
+           ^
+>%
+>h
+>%
+>l
+>%
+console.log([{'a':1},{'b':2}])
+
+
+cities = %w{London Berlin New\ York}
+         ^
+
+>dt{
+>%
+>r]
+>``
+>r[
+
+cities = [London Berlin New\ York]
+
+## Jump Between Matching Keywords
+```.vimrc
+set nocompatible
+filetype plugin on
+runtime macros/matchit.vim
+```
+
+## Surround.vim
+http://github.com/tpope/vim-surround
+
+cities = ["London" "Berlin" New York]
+                            ^
+
+>vee
+>S"
+
+cities = ["London" "Berlin" "New York"]
+                                     ^
+
+>cs"'
+cities = ["London" "Berlin" 'New York']
