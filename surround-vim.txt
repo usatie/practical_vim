@@ -1,0 +1,48 @@
+"Hello World"
+^
+
+>vee
+>S"
+"Hello World"
+^
+
+>cs"'
+'Hello World'
+^
+
+>cs'<p>
+<p>Hello World</p>
+^
+
+>cst"
+"Hello World"
+^
+
+>ds"
+Hello World
+^
+
+>ysiw]
+[Hello] World
+^
+
+>cs]{
+{ Hello } World
+^
+
+>yssb
+({ Hello } World)
+ ^
+
+>ds{ds(
+Hello World
+^
+
+>ysiw<em>
+<em>Hello</em> World
+^
+
+>VS<p class="important">
+<p class="important">
+	<em>Hello</em> World
+</p>
