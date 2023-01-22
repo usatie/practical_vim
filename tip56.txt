@@ -1,0 +1,15 @@
+# Traverse the Jump List
+{motion} : move around within a file
+{jump}   : move between files
+<C-o>    : jump backward
+<C-i>    : jump forward
+
+[count]G                            : Jump to the line number
+/pattern<CR> / ?pattern<CR> / n / N : Jump to next/previous occurrence of pattern
+%                                   : Jump to matching parenthesis
+( / )                               : Jump to start of previous/next sentence
+{ / }                               : Jump to start of previous/next paragraph
+H / M / L                           : Jump to top/middle/bottom of screeen
+gf                                  : Jump to file name under the cursor
+<C-]>                               : Jump to definition of keyword under the cursor
+'{mark} / `{mark}                   : Jump to a mark
