@@ -1,0 +1,13 @@
+# Mark Your Place and Snap Back to it
+
+m{char}  : marks the current cursor location with {char}
+`{char}  : moves the cursor to the exact position where a mark was set with {char}
+'{char}  : moves the cursor on the line where a mark was set with {char}
+
+``       : Position before the last jump within current file
+`.       : Location of last change
+`^       : Location of last insertion
+`[       : Start of last change or yank
+`]       : End of last change or yank
+`<       : Start of last visual selection
+`>       : End of last visual selection
