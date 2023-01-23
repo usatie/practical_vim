@@ -1,0 +1,13 @@
+# Traverse the Change List
+
+
+:changes   : show the change list
+u<C-r>     : traverse backward the change list 
+g;         : traverse backward the change list 
+g,         : traverse forward the change list 
+
+## Marks for the Last Change
+`.         : jump to the position of the last change
+`^         : jump to the last insert
+gi         : Insert text in the same position as where Insert mode was stopped
+             last time in the current buffer.
