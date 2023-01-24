@@ -1,0 +1,19 @@
+# Snap Between Files Using Global Marks
+m{char}   : create a LOCAL mark at the current cursor position
+m{capital char}   : create a GLOBAL mark at the current cursor position
+
+:edit ~/.vimrc  : open my vimrc file
+mV              : create a global mark V in the .vimrc
+
+## Set a Global Mark Before Going Code Diving
+mM              : create a mark on current cursor position
+:vimgrep tip *  : find all occurrences of "tip" in current directory
+                  more on tip111
+
+:cnext          : go to the next quick fix list
+:cprev          : go to the previous quick fix list
+:copen          : open quick fix list
+
+Set a global mark before using :grep, :vimgrep, and :make
+Set a global mark before using :args {arglist} and :argdo
+more on tip38
