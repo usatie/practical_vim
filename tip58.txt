@@ -1,0 +1,33 @@
+# Jump to the filename Under the Cursor
+
+gf                       : go to file
+
+tip51.txt
+tip52.txt
+tip53.txt
+tip54.txt
+tip55.txt
+tip56.txt
+
+## Specify a File Extension
+:set suffixesadd+=.txt   : vim will use .txt extension when looking up a filename with gf
+
+tip51
+tip52
+tip53
+tip54
+tip55
+tip56
+
+## Specify the Directories to Look Inside
+
+:set path?               : inspect the value of the path
+:set path+=~             : vim will look up the home directory
+<C-]>                    : jump from the keyword under the cursor to the definition
+                           Read more tip103 and tip104
+
+.vimrc
+
+## Discussion
+http://github.com/tpope/vim-bundler
+http://github.com/vim-ruby/vim-ruby
