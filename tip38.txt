@@ -1,0 +1,28 @@
+# Group Buffers into a Collection with the Argument List
+vim *.txt   : open all .txt files
+:args       : examine the argument list (vi feature)
+:ls         : examine the buffer list (vim feature)
+
+## Populate the Argument List
+:args {arglist}  : set the contents of the argument list
+
+### Specify Files by Name
+>:args tip50.txt tip51.txt
+>:args
+>:ls
+
+### Specify Files by Glob
+>:args tip4*.txt
+>:args
+>:ls
+
+### Specify Files by Backtick Expansion
+>:args `cat .tips`
+>:args
+>:ls
+
+## Use the Argument List
+:n[ext]          : go to the next file of argument list
+:prev[ious]      : go to the previous file of argument list
+:argdo [command] : execute the same command on each buffer
+                   more on tip36, tip70
