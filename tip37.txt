@@ -1,0 +1,52 @@
+# Track Open Files with the Buffer List
+## Understand the Distinction Between Files and Buffers
+buffer is an in-memory representation of a file.
+
+
+## Meet the Buffer List
+$ cd code/files
+$ vim *.txt
+2 files to edit
+
+:ls       : show the listing of all the buffers
+            % symbol indicates which of the buffers is visible in the current window
+			# symbol represents the alternate file
+:bn[ext]  : switch to the next buffer in the list
+<C-^>     : toggle between the current and alternate files
+
+
+## Use the Buffer List
+### vim-unimpaired
+https://github.com/tpope/vim-unimpaired
+
+:bn[ext]        : move forward in the buffer list
+:bp[revious]    : move forward in the buffer list
+:bf[irst]       : jump to the start of the buffer list
+:bl[ast]        : jump to the last of the buffer list
+
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+[b              : bprevious
+]b              : bnext
+[B              : bfirst
+[B              : blast
+[a              : next argument
+]a              : previous argument
+[q              : next quickfix
+]q              : previous quickfix
+[l              : next location
+]l              : previous location
+[t              : next tag
+]t              : previoust tag
+
+### others
+:b[uffer] N         : jump to buffer N
+:b[uffer] {bufname} : jump to buffer uniquely identified by {bufname}
+:bufdo {command}    : execute Ex command in all of the buffers
+
+## Deleting Buffers
+:bd[elete] N1 N2 N3 : delete buffers N1, N2, and N3
+:N,M bd[elete]      : delete buffers from N to M inclusive
