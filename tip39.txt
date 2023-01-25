@@ -1,0 +1,41 @@
+# Manage Hidden Files
+$ cd code/files
+$ ls
+a.txt	b.txt
+$ vim *.txt
+2 files to edit
+
+>Go
+>:ls
+1 %a + "a.txt"                    line 1
+2      "b.txt"                    line 0
+>:bnext
+E37: No write since last change (add ! to override)
+>:bnext!
+>ls
+1 #h + "a.txt"                    line 1
+2 %a   "b.txt"                    line 0
+
+h for hidden
+
+## Handle Hidden Buffers on Quit
+:quit
+E37: No write since last change
+E162: No write since last change for buffer "tip39.txt"
+
+:qall!   : quit Vim without reviewing our unsaved changes
+:wall    : write all modified buffers without reviewing them one by one
+
+## Enable the 'Hidden' Setting Before Running ':*do' Commands
+:argdo {cmd} works like this:
+>:first
+>{cmd}
+>next
+>{cmd}
+etc.
+
+That's why :next command will fail because {cmd} changed the first buffer!
+
+:argdo {cmd} | update
+will works fine.
+https://vi.stackexchange.com/questions/2776/vim-search-replace-all-files-in-current-project-folder
