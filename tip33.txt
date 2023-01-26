@@ -1,0 +1,23 @@
+# Insert the Current Word at the Command Prompt
+
+<C-r><C-w>   : copies the word under the cursor
+<C-r><C-a>   : copies the WORD under the cursor
+
+var tally;
+    ^
+for (tally=1; tally <= 10; tally++) {
+	// do something with tally
+};
+
+>*
+>cwcounter<Esc>
+>:%s//<C-r><C-w>/g
+
+var counter;
+for (counter=1; counter <= 10; counter++) {
+	// do something with counter
+};
+
+*                : we don't have to type the search pattern thanks to the * command
+                   more on tip91
+:help <C-r><C-w> : see the help of vim documentation
