@@ -39,3 +39,9 @@ That's why :next command will fail because {cmd} changed the first buffer!
 :argdo {cmd} | update
 will works fine.
 https://vi.stackexchange.com/questions/2776/vim-search-replace-all-files-in-current-project-folder
+
+>:args *.txt
+>:argdo %s/jump/jumppp/g | update
+
+>:vimgrep jumppp *.txt
+>:cfdo %s/jumppp/jump/g | update
