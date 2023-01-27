@@ -1,0 +1,28 @@
+# Recall Commands from History
+
+:      : Command Mode
+<Up>   : go further back through Ex command history
+<Down> : go further forward through Ex command history
+
+:set history?     : Show the current history option
+:set history=200  : Set the current history option to 200
+
+:write            : Write current buffer to file
+:!ruby %          : Execute "ruby {current_file_name}" in shell
+:write | !ruby %  : Combine 2 commands above
+
+## Meet the Command-Line Window
+>:write
+>!ruby %
+>q:
+>kk
+>A |<Esc>
+>J
+>:s/write/update
+><CR>
+
+q/      : Open the command-line window with history of searches
+q:      : Open the command-line window with history of Ex commands
+<C-f>   : Switch from Command-Line mode to the command line window
+
+more on tip85
