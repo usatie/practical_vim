@@ -1,0 +1,26 @@
+# Create Complex Patterns by Iterating upon Search History
+
+This string contains a 'quoted' word.
+This string contains 'two' quoted 'words.'
+This 'string doesn't make things easy.'
+
+This string contains a "quoted" word.
+This string contains "two" quoted "words."
+This "string doesn't make things easy."
+
+>:set hlsearch
+>/\v'.+'
+>/\v'[^']+'
+>q/
+>f[
+>c%(<C-r>")<Esc>
+>i|'\w<Esc>
+
+>/\v'([^']|'\w)+'
+>q/
+>f'a(<Esc>;;;i)
+
+## Draft 4: Final Tweak
+>\v'(([^']|'\w)+)'
+>:%s//"\1"/g
+vim will reuse the last search pattern. More on tip91
