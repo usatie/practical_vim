@@ -1,0 +1,26 @@
+# Meet the Substitute Command
+:[range]s[ubstitute]/{pattern}/{string}/[flags]
+
+[range]   : more on tip28
+{pattern} : more on tip12
+
+## Tweak the Substitute Command Using Flags
+:h :s_flags
+
+g    : act globally, change all matches within a line, more on tip89
+c    : confirm, more on tip90
+n    : report the number, more on tip86
+e    : silence the error
+&    : reuse the flags from the previous substitute command
+
+
+## Special Characters for the Replacement String
+\r             : Insert a carriage return
+\t             : Insert a tab character
+\\             : Insert a single backslash
+\1             : Insert the first submatch, more on tip94
+\2             : Insert the second submatch (and so on, up to \9)
+\0             : Insert the entire matched pattern
+&              : Insert the entire matched pattern
+~              : Use {string} from the previous invocation of :substitute, more on tip93
+\={Vim script} : Evaluate {Vim script} expression; use result as replacement {string}, more on tip95, tip96
