@@ -1,0 +1,20 @@
+# Meet Vim's Keyword Autocompletion
+## Autocompletion and Case Sensitivity
+ignorecase   : more on tip73
+
+## Insert mode
+<C-n>        : Next item in the word list
+<C-p>        : Previous item in the word list
+
+## Trigger Autocompletion
+<C-n>        : Generic keywords
+<C-x><C-n>   : Current buffer keywords
+<C-x><C-i>   : Included file keywords
+<C-x><C-]>   : tags file keywords
+<C-x><C-k>   : Dictionary lookup
+<C-x><C-l>   : Whole line completion
+<C-x><C-f>   : Filename completion
+<C-x><C-o>   : Omni-completion
+more on tip114
+
+She sells sea shells by the sea 
