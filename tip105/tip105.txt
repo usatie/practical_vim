@@ -1,0 +1,3 @@
+vim -u NONE -N wakeup.c
+:make      : jump to the first error
+:make!     : does not jump
