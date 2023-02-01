@@ -1,0 +1,42 @@
+# Browse the QuickFix List
+:cnext      : Jump to next item
+:cprev      : Jump to previous item
+:cfirst     : Jump to firts item
+:clast      : Jump to last item
+:cnfile     : Jump to first item in next file
+:cpfile     : Jump to first item in previous file
+:cc N       : Jump to nth item
+:copen      : Open the quickfix window
+:cclose     : Close the quickfix window
+:cdo {cmd}  : Execute {cmd} on each line listed in the quickfix list
+:cfdo {cmd} : Execute {cmd} once for each file listed in the quickfix list
+
+## Meet the Location List
+There is only one global QuickFix List, whereas there are as many location lists.
+
+These command is for QuickFix List
+:make
+:grep
+:vimgrep
+
+These command is for Location List
+:lmake
+:lgrep
+:lvimgrep
+
+## Basic QuickFix Motions
+more on tip37
+more on vim-unimpaired plugin
+
+## QuickFix Fast Forward/Rewind
+:5cnext
+:5]q
+:5[q
+
+## Use the QuickFix Window
+>:copen
+>jjjj
+><CR>
+
+>:copen
+>:cclose

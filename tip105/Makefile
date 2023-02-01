@@ -1,2 +1,2 @@
 all:
-	gcc -c -o wakeup.o wakeup.c
+	gcc -c -o wakeup.o wakeup.c -Weverything

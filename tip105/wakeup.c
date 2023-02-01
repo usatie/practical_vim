@@ -1,6 +1,15 @@
 #include "wakeup.h"
 #include <stdint.h>
 
+void	hoge()
+{
+	int	a;
+	int	b;
+	int	c;
+
+	return 5;
+}
+
 void	generatePacket(uint8_t *mac, uint8_t *packet)
 {
 	int i, j, k;
