@@ -1,0 +1,14 @@
+# Mee the Global Command
+The :global command allows us to run an Ex command on each line that matches a
+particular pattern.
+
+:[range] global[!] /{pattern}/ [cmd]
+
+The default [cmd] is print.
+
+## On the Etymology of Grep
+:g/re/p
+
+g for global
+re for regular expression
+p for print
