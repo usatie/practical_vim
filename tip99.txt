@@ -1,0 +1,10 @@
+# Delete Lines Contains a Pattern
+
+## Delete Matching Lines with ':g/re/d'
+Delete all lines except for the contents of each <a> tag.
+>   \v\<\/?\w+>
+>   :g//d 
+
+## Keep Only Matching Lines with ':v/re/d'
+Only keep lines which contains href.
+>   :v/href/d
