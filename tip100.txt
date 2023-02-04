@@ -1,0 +1,8 @@
+# Collect TODO Items in a Register
+:g/TODO
+:g/TODO/yank a
+:reg a
+
+## Discussion
+global command can be combined with bufdo and argdo.
+:g/TODO/t$
