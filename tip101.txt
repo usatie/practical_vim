@@ -1,0 +1,22 @@
+# Alphabetize the Properties of Each Rule in a CSS File
+built-in sort command
+:h sort
+
+## Sort Properties for a Single Block of Rules
+Open tip101.css
+
+vi{
+:'<,'>sort
+## Sort Properties for Every Block of Rules
+
+:g/{/ .+1,/}/-1 sort
+:.+1,/}/-1 sort
+/{/
+:g/{/ .+1,/}/-1 sort
+
+## Discussion
+:g/{start}/ .,{finish} [cmd]
+:g/{/ .+1,/}/-1 >
+:> echoes a message each time it is invoked
+:silent
+:g/{/sil .+1,/}/-1 >
