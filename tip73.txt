@@ -1,0 +1,11 @@
+# Tune the Case Sensivity of Search Patterns
+## Setting Case Sensitivity Globally
+:set ignorecase
+
+## Setting Case Sensitivity per Search
+\c   : ignore case
+\C   : force case sensitivity
+
+## Enabling Smarter Default Case Sensitivity
+ignorecase
+smartcase
