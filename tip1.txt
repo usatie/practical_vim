@@ -1,0 +1,36 @@
+# Meet the Dot Command
+The dot command lets us repeat the last change.
+It is the most powerful and versatile command in Vim.
+:h .
+
+rc
+.
+5.
+
+Line one
+^
+Line two
+Line three
+Line four
+
+>x
+>.
+>..
+
+Line one
+Line two
+Line three
+Line four
+
+>uuu
+>dd
+>.
+
+>u
+>>G
+>j
+>.
+>j.
+
+## The Dot Command is a Micro Macro
+more on chapter11, Macros
