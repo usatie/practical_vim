@@ -1,0 +1,9 @@
+# Get Back to Normal Mode
+<Esc>   : Switch to Normal Mode
+<C-[>   : Switch to Normal Mode
+<C-c>   : Switch to Normal Mode
+<C-o>   : Switch to Insert Normal Mode
+
+## Meet Insert Normal Mode
+<C-o>o  : Insert new line below
+<C-o>zz : redraws the screen with the current line in the middle.

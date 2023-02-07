@@ -1,0 +1,4 @@
+# Make Corrections Instantly from Insert Mode
+<C-h>  : Delete back one character (backspace)
+<C-w>  : Delete back one word
+<C-u>  : Delete back to start of line
