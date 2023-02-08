@@ -1,0 +1,16 @@
+# Past frtom a Register Without Leaving Insert Mode
+Practical Vim, by Drew Neil
+Read Drew Neil's Practical Vim.
+
+>yt,         : more on tip50
+>jA<space>
+><C-r>0
+>.<Esc>
+
+## Remap the Caps Lock Key
+K : looks up the man page
+J : joins the current and next lines
+
+## Use <C-r>{register} for Character-wise Registers
+<C-r>{register}       : put register
+<C-r><C-p>{register}  : set paste + put register
