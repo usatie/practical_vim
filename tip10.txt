@@ -1,0 +1,45 @@
+# Use Counts to Do Simple Arithmetic
+<C-a>   : Perform addition on numbers
+<C-x>   : Perform subtractio on numbers
+:h ctrl-a
+:h ctrl-x
+
+## Subtract 180
+If the cursor isn't on a digit, it jumps forward to the first one that it finds!
+
+.blog .news { background-image: url(/sprite.png); }
+.blog { background-position: 0px 0px }
+
+>yyp
+>cW.news<Esc>
+>180<C-x>
+
+.blog .news { background-image: url(/sprite.png); }
+.blog { background-position: 0px 0px }
+.news { background-position: -180px 0px }
+
+## Very convenient!!!
+1.
+1.
+1.
+1.
+><C-v>jj
+>g<C-a>
+1.
+2.
+3.
+4.
+
+## Very convenient!!!!!
+.blog { background-position: 0px 0px }
+.blog { background-position: 0px 0px }
+.blog { background-position: 0px 0px }
+.blog { background-position: 0px 0px }
+
+><S-v>jj
+>180g<C-x>
+
+.blog { background-position: 0px 0px }
+.blog { background-position: -180px 0px }
+.blog { background-position: -360px 0px }
+.blog { background-position: -540px 0px }
