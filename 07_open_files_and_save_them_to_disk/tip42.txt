@@ -1,0 +1,14 @@
+# Open a File by Its Filepath Using ':edit'
+:edit   : Open files from within vim
+
+## Open a File Relative to the Current Working Directory
+:pwd    : Print working directory
+:edit %<tab> : % symbol is a shorthand for the filepath of the active buffer
+:h cmdline-special
+
+## Open a File Relative to the Active File Directory
+:edit %:h<tab> : %:h is a shorthand for the full path of the current file's directory
+
+## Easy Expansion of the Active File Directory
+
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
