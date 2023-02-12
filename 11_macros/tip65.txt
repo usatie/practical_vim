@@ -1,0 +1,28 @@
+# Record and Execute a Macro
+
+## Capture a Sequence of Commands by Recording a Macro
+foo = 1
+bar = 'a'
+foobar = foo + bar
+
+
+>qa
+>A;<Esc>
+>Ivar <Esc>
+>q
+>:reg a
+
+## Play Back a Sequence of Commands by Executing a Macro
+>j
+>@a
+>j@@
+
+var foo = 1;
+var bar = 'a';
+var foobar = foo + bar;
+
+:h @
+
+## Execute the Macro in Series
+## Execute the Macro in Parallel
+more on tip68 and tip70
