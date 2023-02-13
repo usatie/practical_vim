@@ -1,0 +1,10 @@
+# Call grep Without Leaving Vim
+:grep  : we can navigate the results using the quickfix list
+
+## Using grep from the Command Line
+$ grep -n Waldo *
+$ vim goldrush.txt +9
+
+## Calling grep from Inside Vim
+:grep Waldo *      : Vim automatically included the -n flag, telling grep to include line numbers in the output.
+:grep -i Waldo *   : Case-insensitive grep
