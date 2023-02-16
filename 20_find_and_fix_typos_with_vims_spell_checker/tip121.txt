@@ -1,0 +1,14 @@
+# Use Alternate Spelling Dictionaries
+:h 'spelllang'
+
+## Specify a Regional Variant of a Language
+moustache is British spelling.
+mustache is American spelling.
+
+:set spell
+:set spelllang=en_s
+
+## Obtain Spell Files for Other Languages
+http://ftp.vim.org/vim/runtime/spell/
+:set spelllang=fr
+:h spellfile.vim
