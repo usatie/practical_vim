@@ -1,0 +1,19 @@
+# Meet the Search Command
+## Execute a Search
+/{pattern}<CR>
+:h 'wrapscan'
+
+## Specify the Search Direction
+?{pattern}<CR>
+
+## Repeat the Last Search
+n      : jumps to the next match
+N      : jumps to the previous match
+/<CR>  : reuse the pattern from the previous search
+?<CR>  : reuse the pattern from the previous search
+gn     : Enable character-wise Visual mode and select next match
+gN     : Enable character-wise Visual mode and select previous match
+
+## Recall Historical Searches
+/<Up>   : Scroll through the previous searches
+/<Down> : Scroll through the next searches
