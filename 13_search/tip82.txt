@@ -1,0 +1,18 @@
+# Tip82 Preview the First Match Before Execution
+:h 'incsearch'
+:set incsearch
+
+
+The car was the color of a carrot.
+
+>/car
+>/carr
+>/carr<CR>
+
+## Check for the Existence of a Match
+<Esc>
+
+## Autocomplete the Search Field Based on Preview Match
+:set incsearch
+>/carr
+><C-r><C-w>
