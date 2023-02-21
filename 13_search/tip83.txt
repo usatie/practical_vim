@@ -1,0 +1,18 @@
+# Tip83 Offset the Curosr to the End of a Search Match
+Aim to learn a new programming lang each year.
+Which lang did you pick up last year?
+Which langs would you like to learn?
+
+
+/lang<CR>
+eauage<Esc>
+ne.
+ne.
+
+/lang/e<CR>     : places the cursor at the end of the search match
+auage<Esc>
+n.
+n.
+
+/lang<CR>
+//e
