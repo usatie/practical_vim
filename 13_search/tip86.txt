@@ -1,0 +1,18 @@
+# Count the Matches for the Current Pattern
+
+## Count Matches with the ':substitute' Command
+n    : supresses the usual behavior, no substitution occurs
+
+:tabe buttons.js
+/\<buttons\>
+:%s///gn
+
+## Count Matches with the ':vimgrep' Command
+%    : expands to the filepath of the current buffer
+
+:tabe buttons.js
+/\<buttons\>
+:vimgrep //g %
+:cnext
+:cnext
+:cprev
