@@ -1,0 +1,27 @@
+# Search for the Current Visual Selection
+*     : search for the word under the cursor
+
+## Search for the Current Word in Visual Mode
+She sells sea shells by the sea shore.
+^
+
+veee*
+
+## Search for the Current Selction (Prior Art)
+:h visual-search
+:vmap X y/<C-R>"<CR>
+
+## Search for the Current Selection (Redux)
+```
+xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>/<C-R>=@<CR><CR>
+
+function! s:VSetSearch(cmdtype)
+	let temp = @s
+	norm! gv"sy
+	let @/ = '\V' . substitute(escape(@s, a:cmdtype.'\'), '\n', '\\n', 'g')
+	let @s = temp
+endfunction
+```
+
+https://github.com/nelstrom/vim-visual-star-search
