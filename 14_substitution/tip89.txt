@@ -1,0 +1,5 @@
+# Tip89 Find and Replace Every Match in a File
+:set hlsearch
+:s/going/rolling
+:s/going/rolling/g
+:%s/going/rolling/g
