@@ -1,0 +1,4 @@
+# Tip89 Eyeball Each Substitution
+
+:%s/content/copy/gc
+yny
