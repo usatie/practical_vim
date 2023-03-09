@@ -1,0 +1,11 @@
+# Tip91 Reuse the Last Search Pattern
+:%s/\v'(([^']|'\w)w+)'/"\1"/g
+
+/\v'(([^']|'\w)w+)'
+:%s//"\1"/g
+
+## It's Not Always Appropriate
+:%s/\n/,
+
+## Implications for Command History
+:%s/<C-r>//"\1"/g
