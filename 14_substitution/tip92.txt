@@ -1,0 +1,22 @@
+# Tip92 Replace with the Contents of a Register
+We don't have to type out the replacement string by hand. If the text already exists in the document, we can yank it into a register and use it in the replacement field. Then we can pass the contents of a register either by value or by reference.
+
+In Tip91, Reuse the Last Search Pattern, on page 225, we saw that Vim makes an intelligent assumption when we leave the search field of the substitute command blank. It's tempting to think that leaving the replacement field blank would also reuse the string from the previous substitute command, but this isn't the case. Instead, a blank replacement field instructs the substitute command to replace each match with an empty string. In other words, it deletes each match.
+
+## Pass by Value
+We can insert the contents of a register by typing <C-r>{register}. Suppose that we have yanked some text and want to paste it into the replacement field of the substitute command. We could do so by typing this:
+
+:%s//<C-r>0/g
+
+## Pass by Reference
+:%s/\=@0/g
+
+\=           : evaluate a Vim script expression
+@{register}  : reference the contents of a register
+
+## Comparison
+:%s/Pragmatic Vim/Practical Vim/g
+
+:let @/='Pragmatic Vim'
+:let @0='Practical Vim'
+:%s//\=@0/g
